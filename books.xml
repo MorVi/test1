@@ -1,3 +1,14 @@
+<!DOCTYPE bookstore [
+<!ELEMENT bookstore (book*)>
+<!ELEMENT book (title)>
+<!ELEMENT book (author+)>
+<!ELEMENT book (year)>
+<!ELEMENT book (price)>
+
+<!ATTLIST book category CDATA #REQUIRED>
+<!ATTLIST book cover (paperback | hardback) #IMPLIED>
+<!ATTLIST title lang CDATA "en">
+]>
 <bookstore>
   <book category="cooking">
     <title lang="en">Everyday Italian</title>
